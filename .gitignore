@@ -1079,3 +1079,4 @@ js_basics/node_modules/.bin/js.cmd
 js_basics/node_modules/.bin/js
 js_basics/node_modules/.bin/is-ci.cmd
 js_basics/node_modules/.bin/is-ci
+js_basics/node_modules/.bin/mime.ps1

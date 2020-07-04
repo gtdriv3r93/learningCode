@@ -14,7 +14,7 @@ app.post('/server',async(req,res) => {
 
 app.get('/',(req,res) => {
      console.log("GET received");
-     res.redirect('../index.html');
+     res.redirect('index.html');
 });
 
 
