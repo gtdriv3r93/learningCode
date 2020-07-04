@@ -24,6 +24,6 @@ app.listen(app.get('port'),() => {
      try{
           console.log("Node Server initialized on Port:",app.get('port'))
      }catch(exception){
-          console.log("server").error(exception);
+          console.log("server error");
      }
 });
