@@ -22,8 +22,9 @@ app.get('/',(req,res) => {
 
 app.listen(app.get('port'),() => {
      try{
-          console.log("Node Server initialized on Port:",app.get('port'))
+          console.log("Node Server initialized on Port:",app.get('port'));
+          let test = require('./test');
      }catch(exception){
-          console.log("server error");
+          console.error(exception);
      }
 });
