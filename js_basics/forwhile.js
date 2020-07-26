@@ -9,14 +9,50 @@
 // let resultado = mifuncion(123,45,32,8);
 // console.log(resultado);
 
-arreglo = [1,1,1,1,1,1,1,1,1,1,1,1,1,11,3,1,1,1,3,12,10];
-for(let a = 0; a <arreglo.length; a++){
-   if(arreglo[a] == 11){
-       arreglo[a]=arreglo[a]-1
-       }
-    if(arreglo[a] == 12){
-        arreglo[a]= arreglo[a]+2
-    }
-    
-}
-console.log(arreglo)
+// arreglo = [];
+// for(let a = 0; a <16; a++){
+//  arreglo.push(a*a)
+// }
+//console.log(arreglo)
+
+// function numeroPrimo(a,b){
+//     for(let index = a; index<=b; index++){
+//         if(index )
+//     }
+// }
+
+// let index = 23;
+// let cociente = index/index;
+// if(cocinete == 1){
+//     if(index/1 == index)
+// }
+
+function isPrime(num) {
+    for(var i = 2; i < num; i++)
+      if(num % i === 0) return false;
+    return num > 1;
+  }
+let numeroPrimo = 0;
+let numeroDePrimos = 0;
+let restoDeNumeros = 0;
+//  for(let index = 2; index <=200000; index++){
+//       numeroPrimo = isPrime(index)
+//       //console.log(index,"Es Primo",numeroPrimo)
+//       if(numeroPrimo == true){
+//          numeroDePrimos++;
+//       }else{
+//         restoDeNumeros++;
+//       }    
+//   }
+//   console.log("Primos", (numeroDePrimos),"- No Primos", (restoDeNumeros))
+numeroPrimo = 0;
+
+ let index = 10000;
+ 
+ while(numeroPrimo == false){
+    numeroPrimo = isPrime(index)
+       
+    index++;   
+ }
+ console.log(index-1,"Es Primo",numeroPrimo)
+ //console.log("Primos", (numeroDePrimos),"- No Primos", (restoDeNumeros))
